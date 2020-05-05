@@ -1,0 +1,125 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+.active {
+    background-color: skyblue;
+}
+.passive {
+    background-color: lightgrey;
+}
+.hovered {
+    background-color: #CCC;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    
+}
+.lhs {
+    max-width: 900px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    /*padding: 15px;*/
+}
+.rhs {
+    max-width: 900px;
+    max-height: 900px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    /*padding: 15px;*/
+}
+
+#controllers {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: space-between;
+    align-items: start;
+}
+.controller {
+    margin: 5px;
+}
+.controller > button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 2px;
+    text-align: center;
+    vertical-align: central;
+}
+.toggleDiv {
+    margin: 10px;
+}
+#toggle {
+    font-size: 14px;
+    padding: 5px;
+    /*position: absolute;*/
+    left: 3%;
+    bottom: 10%;
+    width: 100px;
+}
+
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    margin-left: 10px;
+    max-width: 60px;
+    max-height: 100px;
+}
+
+table p {
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 95%;
+    height: 95vh;
+    box-shadow: 0px 0px 3px 2px grey;
+    margin: 10px;
+    border-spacing: 0;
+}
+tr {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+td {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    /*padding: 1px;*/
+}
+th {
+    text-align: center;
+    background-color: burlywood;
+}
+tr:first-child > td > p {
+    text-align: center;
+}
